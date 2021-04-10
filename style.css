@@ -7,26 +7,32 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
+    overflow: hidden;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-top: .5em;
+    width: 20%;
+    margin-left: auto;
 }
 
-.nav-top {
-    padding: 0 5px;
-    margin-right: .5em; 
+ul li {
+    list-style-type: none;
 }
 
-nav a {
-    margin-top: .5em;
-    text-decoration: none;
-    color: black;
+a {
     text-transform: capitalize;
     font-size: 13px;
     line-height: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    margin-top: .9em; 
 }
 
 nav a:hover {
@@ -35,6 +41,7 @@ nav a:hover {
 .svg-block {
     width: 40px;
     height: 40px;
+    margin-top: .3em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +50,7 @@ nav a:hover {
 .svg-block:hover {
     background-color: rgb(228, 228, 228);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #menu-svg {
@@ -52,7 +60,92 @@ nav a:hover {
 }
 
 #avatar {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
+    padding: 5px;
+}
+
+#avatar:hover {
+    background-color: rgb(196, 193, 193);
+}
+
+main {
+    margin: auto;
+    width: 50%; 
+    text-align: center;
+    height: 60vh;
+}
+
+main img {
+    margin-bottom: 0;
+}
+
+input {
+    width: 80%;
+    padding: 1em;
+    border-radius: 50px;
+    border: 1px solid rgb(190, 190, 190);
+    margin-top: 0;
+}
+
+.btn-container {
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+.btn {
+    display: block;
+    background-color: rgb(241, 241, 241);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+}
+
+.language-options p {
+    font-size: 13px;
+}
+
+.language-options a {
+    color: #1a0dab;
+}
+
+footer {
+    margin-top: 6rem;
+    padding: 0;
+    background-color: rgb(240, 239, 239);
+    color: rgb(88, 87, 87);
+}
+
+footer a {
+    color: rgb(88, 87, 87);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-country {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.footer-nav-1,
+.footer-nav-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-1 li,
+.footer-nav-2 li {
+    margin-right: 1rem;
 }
