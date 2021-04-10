@@ -47,8 +47,9 @@ nav img[alt="avatar"]:hover {
 
 main {
     width: 50%;
-    margin: 7em auto;
+    margin: 6em auto;
     text-align: center;
+    flex: 1 0 auto;
 }
 
 main img {
@@ -130,7 +131,7 @@ footer {
 
     main {
         width: 80%;
-        flex: 1 0 auto;
+        
     }
 
     main img {
